@@ -31,14 +31,29 @@ namespace Week1DungeonCrawler
             return Name;
         }
 
+        public void updateName(string name)
+        {
+            Name = name;
+        }
+
         public int getLives()
         {
             return Lives;
         }
 
-        public int getLevels()
+        public void updateLives()
+        {
+            Lives--;
+        }
+
+        public int getLevel()
         {
             return Level;
+        }
+
+        public void updateLevel()
+        {
+            Level++;
         }
     }
 }
